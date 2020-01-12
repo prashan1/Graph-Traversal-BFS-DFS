@@ -18,14 +18,17 @@ class Graph_BFS_vs_DFS{
 		 public void add( int src , int dest ){						
 			 
 		 start[ src ].add( dest );
-		
-		 }
+		 }													
+		                                                                
 	}
 	
 	public static void main( String[] arg){
 		
-		Graph g = new Graph(4);
-		 g.add(0, 1); 
+		Graph g = new Graph(4);                                       //GRAPH
+									 --3 ----2 --- 0 --- 1
+			 				         	 \----/	  \         /
+			 							    -------	
+	g.add(0, 1); 
         g.add(0, 2); 
         g.add(1, 2); 
         g.add(2, 0); 
